@@ -14,17 +14,12 @@ export const Pagelink = [
   {
     id: 2,
     href: "#about",
-    text: "about",
+    text: "Gallery",
   },
   {
     id: 3,
     href: "#Service",
-    text: "Service",
-  },
-  {
-    id: 4,
-    href: "#tours",
-    text: "tours",
+    text: "Faq's",
   },
 ];
 

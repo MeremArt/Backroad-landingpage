@@ -1,0 +1,37 @@
+.img-container {
+  position: relative;
+}
+
+.img {
+  height: 100vh;
+
+  /* top: 0;
+  left: 0; */
+  animation: float 3s ease-in-out infinite;
+}
+.img-container img {
+  position: absolute;
+}
+.img-container img:first-child {
+  z-index: 0; /* changed to 0 */
+}
+.img-container img:last-child {
+  z-index: 1; /* changed to 1 */
+  height: 300px;
+  width: 300px;
+  top: -10.5px;
+  left: -200px;
+  margin-right: 80px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

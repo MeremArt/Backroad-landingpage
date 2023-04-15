@@ -1,24 +1,21 @@
 import React from "react";
 import Title from "./Title";
-import { services } from "../Data";
+import Capcom from "../images/Capcom.png";
+import Captain from "../images/captain.png";
 const Service = () => {
   return (
-    <section className="section services" id="services">
-      <Title title="our" subtitle="services" />
-      <div className="section-center services-center">
-        {services.map((service) => {
-          return (
-            <article className="service" key={service.id}>
-              <span className="service-icon">
-                <i className={service.icon}></i>
-              </span>
-              <div className="service-info">
-                <h4 className="service-title">{service.title}</h4>
-                <p className="service-text">{service.text}</p>
-              </div>
-            </article>
-          );
-        })}
+    <section className="hero2">
+      <main className="oh">
+        <h2 className="avenger">The Avengers Spectacular Special Issue</h2>
+        <p className="pp">
+          The start of a great new avengers line-up, avengers assemble.
+        </p>
+        <button className="Download-button">Download</button>
+      </main>
+      <div className="captain">
+        <img src={Capcom} alt="product-image" />
+
+        <img src={Captain} />
       </div>
     </section>
   );

@@ -1,43 +1,24 @@
 import React from "react";
 import Title from "./Title";
-import { tours } from "../Data";
-const Tours = () => {
+import Spi from "../images/spiderbook.png";
+import Spider from "../images/spider.png";
+const Service = () => {
   return (
-    <section className="section" id="tours">
-      <Title title="featured" subtitle="tours" />
+    <section className="hero2">
+      <main className="ohh">
+        <h2 className="avenger">The Amazing Spider - Man Series</h2>
+        <p className="ppp">
+          The start of a great new avengers line-up, avengers assemble.
+        </p>
+        <button className="Download-buttons">Download</button>
+      </main>
+      <div className="captains">
+        <img src={Spider} alt="product-image" />
 
-      <div className="section-center featured-center">
-        {tours.map((tour) => {
-          const { id, image, date, title, info, duration, location, cost } =
-            tour;
-          return (
-            <article className="tour-card" key={id}>
-              <div className="tour-img-container">
-                <img src={image} className="tour-img" alt={title} />
-                <p className="tour-date">{date}</p>
-              </div>
-              <div className="tour-info">
-                <div className="tour-title">
-                  <h4>{title}</h4>
-                </div>
-                <p>{info}</p>
-                <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>{" "}
-                    {location}
-                  </p>
-                  <p>{duration}</p>
-                  <p>{cost}</p>
-                </div>
-              </div>
-            </article>
-          );
-        })}
+        <img src={Spi} alt="product-image" />
       </div>
     </section>
   );
 };
 
-export default Tours;
+export default Service;

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo.svg";
+import logo from "../images/comicbay.png";
 import { Pagelink, socialLinks } from "../Data";
 
 const Navbar = () => {
@@ -28,14 +28,9 @@ const Navbar = () => {
         <ul className="nav-icons">
           {socialLinks.map((social) => {
             return (
-              <li key={social.id}>
-                <a
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-icon"
-                >
-                  <i className={social.icon}></i>
+              <li>
+                <a target="_blank" rel="noreferrer" className="nav-icon">
+                  <i className=""></i>
                 </a>
               </li>
             );

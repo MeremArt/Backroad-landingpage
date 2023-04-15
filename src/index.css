@@ -56,7 +56,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
-  color: var(--clr-grey-1);
+
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -66,11 +66,10 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
-  width: 100%;
-  display: block;
+.nav-logo {
+  width: 170px;
+  margin-top: 10px;
 }
-
 h1,
 h2,
 h3,
@@ -178,44 +177,151 @@ Hero
   justify-content: center;
   align-items: center;
 }
+.hero2 {
+  width: 1440px;
+  height: 853px;
+  left: 0px;
+  top: 0px;
+
+  background-color: #fdf4f4;
+}
+.Spiderman {
+  width: 1440px;
+  height: 598px;
+  position: relative;
+  top: 131px;
+  background-color: #edf0c1;
+}
+
+.Spiman {
+  height: 600px;
+  left: 954px;
+  top: -53px;
+  position: relative;
+}
+.Iron {
+  width: 1440px;
+  height: 853px;
+  left: 0px;
+  top: 0px;
+
+  background: black;
+}
 .hero-banner {
   text-align: center;
   color: var(--clr-white);
   padding: 0 3rem;
 }
 .hero-banner h1 {
-  text-transform: uppercase;
+  width: 706px;
+  height: 170px;
+
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 100%;
+  /* or 64px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.018em;
+
+  color: #fcfcfc;
 }
 .hero-banner p {
-  max-width: 35rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--clr-white);
-  letter-spacing: var(--spacing);
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+
+  line-height: 100%;
+  /* or 38px */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.018em;
+
+  color: #ffffff;
 }
 .hero-btn {
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
-  background: var(--clr-white);
-  color: var(--clr-primary-5);
+  background: #fff500;
+  border-radius: 5px;
+  color: #000000;
+}
+.Ironman {
+  position: relative;
+  left: 459px;
+  bottom: 61px;
+}
+.Iron-avenger {
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: initial;
+
+  /* or 44px */
+  width: 525px;
+  margin: auto;
+  top: 234px;
+  position: relative;
+
+  display: flex;
+
+  letter-spacing: -0.018em;
+
+  /* Black/600 */
+
+  color: #ffffff;
 }
 .hero-btn:hover {
   background: transparent;
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
+.captain {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 131px;
+  margin-left: -32px;
+  position: relative;
+  top: -167px;
+}
+.captains {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 181px;
+  margin-left: -32px;
+  position: relative;
+  top: -130px;
+}
+.bang {
+  height: 218px;
+  position: relative;
+  top: 409px;
+  right: -21px;
+}
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./images/main.jpeg") center/cover no-repeat;
+    background: #313131 url("./images/hero.jpeg") center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
   }
   .hero-banner p {
-    max-width: 45rem;
+    max-width: 34rem;
+    margin-left: 72px;
+    margin-bottom: 30px;
   }
 }
+
 /*
 =============== 
 About
@@ -228,7 +334,241 @@ About
 .about-info {
   margin-bottom: 2rem;
 }
+.best-selling {
+  background: #edf0c1;
+  width: 100%;
+  margin-top: 50px;
+  height: 1024px;
+}
+.best-selling h2 {
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 100%;
+  margin-left: 63px;
+  margin-top: 20px;
+  top: 42px;
+  position: relative;
+}
+.card {
+}
+.Slide {
+  background: #111111;
+  margin-top: 50px;
+}
+.comic-list {
+  position: relative;
+  left: 108px;
+  top: 71px;
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  color: #191919;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.018em;
+  font-weight: 400;
+  font-size: 40px;
+}
+.comic-ul {
+  margin-bottom: 10px;
+}
+.comic-img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.b1 {
+  position: relative;
 
+  height: 402px;
+  width: 288px;
+  left: 733px;
+  bottom: 196px;
+}
+
+.b2 {
+  position: relative;
+  left: 768px;
+  top: 109px;
+  height: 442px;
+}
+.b3 {
+  position: relative;
+
+  height: 463px;
+
+  left: -54px;
+  bottom: 295px;
+}
+.aven {
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  text-align: initial;
+
+  /* or 44px */
+  width: 629px;
+  margin: auto;
+  top: 144px;
+  left: 174px;
+  position: relative;
+
+  display: flex;
+
+  letter-spacing: -0.018em;
+
+  /* Black/600 */
+
+  color: #000000;
+}
+.avenger {
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  text-align: initial;
+
+  /* or 44px */
+  width: 525px;
+  margin: auto;
+  top: 234px;
+  position: relative;
+
+  display: flex;
+
+  letter-spacing: -0.018em;
+
+  /* Black/600 */
+
+  color: #000000;
+}
+
+.ppp {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  top: 254px;
+  width: 453px;
+  left: 326px;
+  text-align: initial;
+  position: relative;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.018em;
+  color: #323232;
+}
+.Iron-text {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  top: 254px;
+  width: 453px;
+  left: 94px;
+  text-align: initial;
+  position: relative;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.018em;
+  color: #ffffff;
+}
+
+.ppps {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  top: 254px;
+  width: 453px;
+  left: 518px;
+  text-align: initial;
+  position: relative;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.018em;
+  color: #323232;
+}
+
+.pp {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  top: 254px;
+  width: 453px;
+  left: 465px;
+  text-align: initial;
+  position: relative;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.018em;
+  color: #323232;
+}
+.Download-buttons {
+  box-shadow: 6px 6px 0 #000;
+  background: #fff500;
+  border-radius: 5px;
+  border: none;
+  right: 150px;
+  padding: 12px 24px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+  font-weight: 700;
+  font-size: 30px;
+  width: 215px;
+  height: 70px;
+  cursor: pointer;
+  color: #000000;
+  top: 257px;
+  position: relative;
+}
+.Download-button {
+  box-shadow: 6px 6px 0 #000;
+  background: #fff500;
+  border-radius: 5px;
+  border: none;
+  right: -464px;
+  padding: 12px 24px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+  font-weight: 700;
+  font-size: 30px;
+  width: 215px;
+  height: 70px;
+  cursor: pointer;
+  color: #000000;
+  top: 257px;
+  position: relative;
+}
+.ohh {
+  text-align: center;
+  margin-right: 278px;
+}
+.ohhnoman {
+  text-align: center;
+  margin-right: 750px;
+  position: relative;
+  top: 26px;
+}
+.ohhnoSpi {
+  text-align: center;
+  margin-right: 750px;
+  position: relative;
+  top: 26px;
+}
+.ohhno {
+  text-align: center;
+  margin-right: -108px;
+  position: relative;
+  top: 122px;
+}
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
@@ -492,11 +832,17 @@ Navbar
   display: block;
   padding: 1rem 2rem;
   text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  /* letter-spacing: var(--spacing); */
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
-  font-size: 1rem;
+
+  font-family: Comic Sans MS;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .nav-link:hover {
   color: var(--clr-primary-1);
@@ -526,6 +872,8 @@ Navbar
   .nav-center {
     display: flex;
     justify-content: space-between;
+    top: -85.5px;
+    left: -200px;
     align-items: center;
     /* optional */
     flex-wrap: wrap;
@@ -538,7 +886,8 @@ Navbar
   }
   .nav-link:hover {
     padding: 0;
-    color: var(--clr-primary-5);
+    color: #aa0000;
+
     background: transparent;
   }
   .nav-icons {
@@ -546,7 +895,7 @@ Navbar
   }
 
   .nav-link {
-    margin-right: 0.7rem;
+    margin-right: 3.5rem;
   }
   .nav-icon {
     margin-right: 0.7rem;
@@ -557,4 +906,404 @@ Navbar
   .nav-icon:hover {
     color: var(--clr-primary-8);
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.first {
+  position: absolute;
+  width: 400px;
+  display: inline;
+  top: 118px;
+  right: 0px;
+  left: 40px;
+}
+
+/* college text edit  */
+/* .coll{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+display: flex;
+font-size: 18px;
+color: #423E40;
+font-weight: 600;
+padding-top: 0px;
+letter-spacing: -0.6px;
+position:absolute;
+left: 74px;
+    bottom: 9px;
+} */
+.second {
+  color: black;
+  position: absolute;
+  width: 400px;
+  display: flex;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  top: 338px;
+  font-style: italic;
+  right: 0px;
+  left: 42px;
+}
+
+.font {
+  font-family: "Sansation";
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 50px;
+  text-align: left;
+}
+
+.idea {
+  position: absolute;
+  top: 395px;
+  right: 0px;
+  left: 40px;
+}
+
+.out {
+  position: absolute;
+  top: 395px;
+  right: 0px;
+  left: 167px;
+}
+
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0px 20px;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav_link,
+.ti,
+li {
+  padding: 9px 25px;
+  list-style: none;
+}
+
+#kio {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f5e8e4;
+  position: sticky;
+  padding: 0 24 0 10px;
+  box-shadow: 0px -2px 18px rgb(71 115 158 / 20%);
+  height: 56px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  position: relative;
+  top: 4px;
+  left: 23px;
+}
+
+.ti {
+  position: relative;
+  margin: 20px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.top-bn {
+  border: none;
+  border-radius: 5px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.display-1 {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+#shadow {
+  box-shadow: -5px 10px 10px 5px rgb(71 115 158 / 20%);
+  text-align: right;
+}
+
+.display {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+}
+
+.top-display {
+  position: absolute;
+  left: 640px;
+  top: 165px;
+}
+
+.Box-1 {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  background-color: #eaedd7;
+  position: absolute;
+  top: 800px;
+  left: 45px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Box-2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  background-color: #d3e8cf;
+  position: absolute;
+  top: 800px;
+  right: 45px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ot {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.in {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.in-1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.bottom {
+  position: absolute;
+  left: 24px;
+  top: 1290px;
+  text-align: left;
+  margin: 20px 20px;
+}
+
+.feet {
+  height: 335px;
+  position: absolute;
+  margin-top: 50px;
+  top: 1500px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 15%;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+article.art-1 p {
+  font-size: 10px;
+  color: #c7c7cd;
+  width: 230px;
+}
+
+article.art-1 img {
+  cursor: pointer;
+}
+
+article.art-1 h1 {
+  padding-top: 20px;
+  font-size: 25px;
+  width: 100px;
+}
+
+article.contact h1 {
+  font-size: 25px;
+  padding-top: 20px;
+  width: 200px;
+}
+
+article.contact p {
+  font-size: 10px;
+  color: #c7c7cd;
+  width: 250px;
+}
+
+article.links h1 {
+  font-size: 25px;
+  width: 200px;
+  padding-top: 20px;
+}
+
+.custom-color {
+  color: white;
+}
+
+.custom-class {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+article.links a {
+  font-size: 10px;
+  color: #c7c7cd;
+  margin: 5px;
+  width: 150px;
+}
+
+article.news h1 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+article.news p {
+  font-size: 10px;
+  color: #c7c7cd;
+  width: 200px;
+}
+
+article.news input {
+  width: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+article.news form {
+  display: flex;
+}
+
+.form-control::placeholder {
+  color: #ced4da;
+}
+
+.btnn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #343a40;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  margin-left: 5px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btnn:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+@media (max-width: 480px) {
+  /* Make header and sections take up full width of viewport */
+  header,
+  main > section {
+    width: 100%;
+  }
+
+  /* Increase font size for small screens */
+  body {
+    font-size: 1.2em;
+  }
+
+  /* Adjust layout for small screens */
+  nav {
+    flex-direction: column;
+  }
+
+  ul.nav-links {
+    justify-content: flex-start;
+  }
+
+  a.cta {
+    margin-top: 10px;
+  }
+}
+
+.logo-2 {
+  position: absolute;
+  left: 33px;
+}
+
+section.row hr {
+  margin: auto;
+  margin-top: 10px;
+}
+
+section.g p {
+  margin: 20px;
+}
+
+section.g a {
+  font-size: 10px;
+}
+
+.seat-2 {
+  max-width: 95px;
+  max-height: 231px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+}
+
+.seat-1 {
+  max-width: 95px;
+  max-height: 231px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+}
+.best {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 200px;
 }
